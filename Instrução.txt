@@ -1,0 +1,27 @@
+- COMEÇAR O APP
+cd c:/
+mkdir Python
+cd Python
+python -m venv venv
+cd venv/Scripts
+activate
+cd c:/
+pip install django
+django-admin startproject project .
+python manage.py startapp app
+
+- ATIVAR O APP
+cd c:/Python
+cd venv/Scripts
+activate
+cd c:/Python
+python manage.py runserver
+
+- INSTALAR MYSQL
+pip install mysqlclient
+python manage.py migrate
+python manage.py runserver
+pip install mysql-connector-python
+
+- HEROKU
+https://www.youtube.com/watch?v=ZhPxdaX5OJ8&list=PLbnAsJ6zlidvszSXnxplfYgtB6KQ-fZ-N&index=9
